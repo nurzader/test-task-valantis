@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/test-task-valantis/static/css/main.a846717f.css",
-    "main.js": "/test-task-valantis/static/js/main.ec1ccc4a.js",
+    "main.css": "/test-task-valantis/static/css/main.9c1fe5a1.css",
+    "main.js": "/test-task-valantis/static/js/main.eadd745b.js",
     "static/media/product-img.jpg": "/test-task-valantis/static/media/product-img.87bf9d6d2251d5f8c4c3.jpg",
     "static/media/home-banner.jpg": "/test-task-valantis/static/media/home-banner.83bed62e7388a8310f84.jpg",
     "static/media/product2.jpg": "/test-task-valantis/static/media/product2.8c58a4c12649b3aae375.jpg",
@@ -11,11 +11,11 @@
     "static/media/error.gif": "/test-task-valantis/static/media/error.42292aa12b6bc303ce99.gif",
     "static/media/rings.png": "/test-task-valantis/static/media/rings.cb533cc718fe1134dbab.png",
     "index.html": "/test-task-valantis/index.html",
-    "main.a846717f.css.map": "/test-task-valantis/static/css/main.a846717f.css.map",
-    "main.ec1ccc4a.js.map": "/test-task-valantis/static/js/main.ec1ccc4a.js.map"
+    "main.9c1fe5a1.css.map": "/test-task-valantis/static/css/main.9c1fe5a1.css.map",
+    "main.eadd745b.js.map": "/test-task-valantis/static/js/main.eadd745b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a846717f.css",
-    "static/js/main.ec1ccc4a.js"
+    "static/css/main.9c1fe5a1.css",
+    "static/js/main.eadd745b.js"
   ]
 }
