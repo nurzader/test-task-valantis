@@ -11,8 +11,10 @@ const ProductsPage = () => {
     const [products, setProducts] = useState([]);
     const limit = 50;
     const {pathname} = useLocation();
-
     const {loading, error, clearError, getIds, getItems} = useJewelryService();
+
+    let retryCount = 0;
+    const MAX_RETRY_COUNT = 5;
 
     useEffect(() => {
         onRequest();
@@ -26,6 +28,7 @@ const ProductsPage = () => {
                 const uniqueItems = removeDuplicates(items, 'id');
 
                 setProducts(uniqueItems);
+                retryCount = 0;
             })
             .catch((error) => {
                 console.error('Произошла ошибка при загрузке данных.', error);
@@ -35,10 +38,15 @@ const ProductsPage = () => {
     };
 
     const retryRequest = async () => {
+        if (retryCount > MAX_RETRY_COUNT) {
+            return;
+        }
+
         await new Promise((resolve) => setTimeout(resolve, 1000));
 
         clearError();
         onRequest();
+        retryCount++;
     };
 
     const removeDuplicates = (array, key) => {
