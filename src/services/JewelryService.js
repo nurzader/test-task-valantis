@@ -23,25 +23,16 @@ const useJewelryService = () => {
         return await request(apiUrl, JSON.stringify(requestBody));
     };
 
-    const getFields = async (field, offset, limit) => {
-        const requestBody = {
-            action: 'get_fields',
-            params: {field, offset, limit},
-        };
-
-        return await request(apiUrl, JSON.stringify(requestBody));
-    };
-
     const filter = async (field) => {
         const requestBody = {
             action: 'filter',
-            params: {field},
+            params: field,
         };
 
         return await request(apiUrl, JSON.stringify(requestBody));
     };
 
-    return {loading, error, clearError, getIds, getItems, getFields, filter};
+    return {loading, error, clearError, getIds, getItems, filter};
 };
 
 export default useJewelryService;
